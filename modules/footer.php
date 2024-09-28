@@ -25,7 +25,7 @@
     </ul>
     <div class="center">
         <p class="hideOnMobile" style="padding-right: 10px; margin-top: 0px;"><i>Made with HTML, CSS, JavaScript & PhP</i></p>
-        <p style="margin-top: 0px;"><i>Alex Gray - 2021</i></p>
+        <p style="margin-top: 0px;"><i>Alex Gray - 2024</i></p>
     </div>
 </div>
 <script type="text/javascript" src="../modules/collapsible.js"></script>
