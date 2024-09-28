@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900|Montserrat:900');
+:root {
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    color: rgba(229, 229, 229, 0.9);
+	font: 100%/1.75 Morriweather, Georgia, serif;
+	background: #333146;
+	height: 100%;
+	margin: 0;
+}
+
+p a {
+	text-decoration: none;
+	color: darkgray;
+}
+
+.clear {
+	clear: both;
+}
+
+.parallax {
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+}
+
+.parallaxImg2 {
+	background-image: url("imgs/background-blur.png");
+}
+
+.parallaxImg1 {
+	background-image: url("imgs/projectsBackground.png");
+}
+
+.main {
+	width: 70%;
+	margin: auto;
+	background: #000000c9;
+	padding: 10px;
+}
+
+.subSection {
+	width: 70%;
+	margin: auto;
+	padding: 15px;
+	height: 200px;
+}
+
+.footer {
+	width: 60%;
+	margin: auto;
+}
+
+.mediaBar {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+	padding: initial;
+	margin: auto;
+}
+
+.middle_mediaIcon {
+	width: 100px;
+	padding: 20px;
+}
+
+.footer_mediaIcon {
+	width: 50px;
+	padding: 10px;
+}
+
+.profilePicture {
+	border-radius: 50%;
+	width: 256px;
+	height: 256px;
+	float: left;
+	padding: 10px;
+}
+
+#iconColor {
+	fill: white;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	color: rgba(229, 229, 229, 0.9);
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+}
+
+.collapsible:hover {
+	background-color: rgba(191, 191, 191, 0.7);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+	padding: 0 18px;
+	/*display: none;*/
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+/* Personal Projects Section */
+.projectsSection h2 {
+	text-align: center;
+}
+
+/* Float four columns side by side */
+.column {
+	width: 25%;
+	margin: 0 5px;
+	background-color: #444;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	color: white;
+}
+
+.column:hover {
+	color: black;
+	background-color: #6b6b6b;
+}
+
+.column a {
+	text-decoration: none;
+}
+
+.row {
+	margin: 0 -5px;
+	display: flex;
+	align-items: stretch;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.center {
+	margin: 0 -5px;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.onlyMobile {
+	display: none;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1200px) {
+	.main {
+		width: 80%;
+	}
+    .subSection {
+		width: 80%;
+        height: 300px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.column {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+	.row {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.main {
+		width: 95%;
+	}
+
+	.column {
+		width: 95%;
+	}
+
+	.profilePicture {
+		float: auto;
+		width: 100%;
+		height: 100%;
+	}
+
+	.parallaxImg1 {
+		background-image: none;
+		background: darkgray;
+	}
+
+	.parallaxImg2 {
+		background-image: none;
+		background: darkgray;
+	}
+
+	.subSection {
+		display: none;
+	}
+
+	.hideOnMobile {
+		display: none;
+	}
+
+	.onlyMobile {
+		display: flex;
+	}
+
+	.column:hover {
+		color: inherit;
+		background-color: #444;
+	}
+
+	.collapsible:hover {
+		background-color: inherit;
+	}
+}
+
+/* Style the counter cards */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #444;
+	color: white;
+	height: 100%;
+}
+
+.card a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* End Person Projects Section */
+
+/* Buttons and such */
+
+.btn {
+	border: 2px solid black;
+	background-color: #AA9838;
+	color: white;
+	width: 40%;
+	height: 45px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.btn:hover {
+	background-color: #d2c579;
+	color: black;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.projectBtnMod {
+	width: 90%;
+}
+
+
+
+/* Skills Section */
+
+.skillsSection {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 25px;
+}
+
+.skillsSection h2 {
+	text-align: center;
+}
+
+/* Container for skill bars */
+.skillBar {
+	width: 100%; /* Full width */
+	background-color: #ddd; /* Grey background */
+}
+
+.skills {
+	text-align: right; /* Right-align text */
+	padding-top: 5px; /* Add top padding */
+	padding-bottom: 5px; /* Add bottom padding */
+	color: white; /* White text color */
+}
+
+.java {width: 98%; background-color: #AA9838; padding-right: 25px;}
+.html {width: 95%; background-color: #AA9838; padding-right: 25px;}
+.cSharp {width: 80%; background-color: #AA9838; padding-right: 25px;}
+.c {width: 80%; background-color: #AA9838; padding-right: 25px;}
+.css {width: 90%; background-color: #AA9838; padding-right: 25px;}
+.sql {width: 65%; background-color: #AA9838; padding-right: 25px;}
+.dart {width: 85%; background-color: #AA9838; padding-right: 25px;}
+.javaScript {width: 80%; background-color: #AA9838; padding-right: 25px;}
+.aws {width: 70%; background-color: #AA9838; padding-right: 25px;}
+.php {width: 80%; background-color: #AA9838; padding-right: 25px;}
